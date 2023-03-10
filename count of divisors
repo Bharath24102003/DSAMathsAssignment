@@ -1,0 +1,13 @@
+vector<int> count_divisors(vector<int>& arr) {
+    vector<int> result;
+    for (int num : arr) {
+        int count = 0;
+        for (int i = 1; i <= num; i++) {
+            if (num % i == 0) {
+                count++;
+            }
+        }
+        result.push_back(count);
+    }
+    return result;
+}
