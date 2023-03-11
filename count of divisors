@@ -11,3 +11,13 @@ vector<int> count_divisors(vector<int>& arr) {
     }
     return result;
 }
+int main(){
+    vector<int> arr;
+    for(int i=0;i<n;i++)
+    {
+    int a;
+        cin>>a;
+        arr.push_back(a);
+    }
+    return count_divisors(arr);
+}
